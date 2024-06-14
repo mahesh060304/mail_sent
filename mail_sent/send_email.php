@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('kmahesh060304@gmail.com', 'GUVI GEEK');
+        $mail->setFrom('$mail_username', 'GUVI GEEK');
 
         if (!empty($to)) {
             foreach ($to as $recipient) {
